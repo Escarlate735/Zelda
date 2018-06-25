@@ -1,0 +1,31 @@
+<h1>Página de cadastro</h1><br>
+<%= form_with scope: :clientes, url: clientes_path, local: true do |form| %>
+<p>
+	<%= form.label :Nome %><br>
+	<%= form.text_field :Nome %>
+</p>
+
+<p>
+	<%= form.label :CPF %><br>
+	<%= form.text_field :CPF %>
+</p>
+
+<p>
+	<%= form.label :Email %><br>
+	<%= form.text_field :Email %>
+</p>
+
+<p>
+	<%= form.label :Endereco %><br>
+	<%= form.text_field :Endereco %>
+</p>
+
+<p>
+	<%= form.label :Data_de_Nascimento %><br>
+	<%= form.text_field :Data_de_Nascimento %>
+</p>
+
+<p>
+	<%= form.submit %>
+</p>
+<% end %>
