@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Usuario: MyString
   Pagamento: MyString
   Status: MyString
+  cliente: one
 
 two:
-  Usuario: MyString
   Pagamento: MyString
   Status: MyString
+  cliente: two

@@ -22,4 +22,12 @@
   <strong>Data_de_Nascimento:</strong>
   <%= @cliente.Data_de_Nascimento %>
 </p>
-<% link_to 'Back', clientes_path %>
+
+<h2>Pagamentos</h2>
+<%= render @cliente.pacotes %>
+ 
+<h2>Seja sócio:</h2>
+<%= render 'pacotes/form' %>
+
+<%= link_to 'Edit' , edit_cliente_path(@cliente)%>
+<%= link_to 'Voltar à pagina anterior', clientes_path %>
